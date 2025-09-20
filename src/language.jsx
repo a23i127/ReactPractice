@@ -1,14 +1,12 @@
-import React from "react"; 
-class Language extends React.Component {
-    render() {
-        return(
-            <div className="language-title">
-                <div className="language-name">{this.props.name}</div>
-                <div className="laguage-image">
-                  <img src={this.props.image}></img>
-                </div>
-            </div>
-        )
-    }
+import React from 'react';
+
+function Language(props) {
+  return (
+    <div className="language-card">
+      <img src={props.image} alt={props.name} />
+      <div className="language-name">{props.name}</div>
+    </div>
+  );
 }
+
 export default Language;
