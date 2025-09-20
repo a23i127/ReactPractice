@@ -93,6 +93,50 @@ h1 {
   text-align: center;
 }
 
+/* ポップアップ用スタイル追加 */
+.language-popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.language-popup-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 32px 24px;
+  min-width: 280px;
+  max-width: 90vw;
+  text-align: center;
+  position: relative;
+}
+.language-popup-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.language-popup-close:hover {
+  color: #e74c3c;
+}
+.language-popup h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+.language-popup p {
+  margin: 18px 0 0 0;
+  color: #555;
+  font-size: 1rem;
+}
+
 @media (max-width: 600px) {
   .language {
     gap: 16px;
